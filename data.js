@@ -12,7 +12,7 @@ NCB.parseCSV = function(text){
   return rows.filter(r=>r.some(v=>String(v).trim()!=='')).map(r=>Object.fromEntries(headers.map((h,i)=>[h,(r[i]??'').trim()])));
 };
 NCB.load = async function(kind){
-  const local={teams:'data/teams.csv',games:'data/games.csv',fields:'data/fields.csv'}[kind];
+  const local={teams:'teams.csv',games:'games.csv',fields:'fields.csv'}[kind];
   const remote=(window.NCB_CONFIG?.sources||{})[kind];
   const url=remote||local;
   const res=await fetch(url,{cache:'no-store'});

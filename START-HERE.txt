@@ -1,0 +1,55 @@
+NICKEL CITY BASEBALL LEAGUE - START HERE
+========================================
+
+You do NOT need WordPress. This website can be hosted for free with GitHub Pages.
+
+WHAT IS ALREADY BUILT
+---------------------
+- Full homepage and mobile navigation
+- 9-team 10U directory
+- Schedule page
+- Results page
+- Automatic standings
+- Fields page
+- Rules page and official 2027 rulebook PDF
+- About and Contact pages
+
+HOW GAME UPDATES WORK
+---------------------
+The website only needs one Games table.
+
+Before a game:
+  date | time | away_team | home_team | status = Scheduled
+
+After a game:
+  enter away_score + home_score and change status to Final
+
+The Results page and Standings page update from the same data.
+
+FREE HOSTING - GITHUB PAGES
+---------------------------
+1. Create a free GitHub account at github.com.
+2. Create a new PUBLIC repository. A name like nickel-city-baseball is fine.
+3. Upload all files and folders from this website package into the repository.
+4. Open the repository Settings.
+5. Open Pages.
+6. Under Build and deployment, choose Deploy from a branch.
+7. Select the main branch and / (root), then Save.
+8. GitHub will display the free website address after deployment.
+
+EASY SCHEDULE / SCORE UPDATES WITH GOOGLE SHEETS
+-------------------------------------------------
+1. Open NCBL_Website_Data_Template.xlsx.
+2. Upload it to Google Drive and open it as a Google Sheet.
+3. Delete the example rows on Games and Fields.
+4. Keep the three tabs named Games, Teams and Fields.
+5. Publish each tab to the web as CSV.
+6. Copy the three CSV links.
+7. Open assets/js/config.js and paste the links into teams, games and fields.
+8. Commit the change once. After that, maintain the Google Sheet - not the website code.
+
+IMPORTANT
+---------
+The Iron Horse and Orchard Park team color names in the starter data are working names. If the final team designations are different, simply edit the name cells on the Teams tab.
+
+The league contact email is intentionally blank because no official Nickel City league email address has been provided yet.

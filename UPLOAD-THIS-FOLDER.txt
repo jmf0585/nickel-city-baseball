@@ -1,0 +1,29 @@
+NICKEL CITY BASEBALL LEAGUE - GITHUB PAGES FIXED VERSION
+
+This version is intentionally FLAT: every website file belongs in the ROOT of the GitHub repository.
+That matches the way the files were uploaded in the browser and prevents broken CSS/logo paths.
+
+TO FIX THE LIVE SITE:
+1. Open this extracted folder.
+2. Select ALL files in this folder.
+3. In GitHub: Add file -> Upload files.
+4. Drag all selected files onto GitHub.
+5. GitHub will show that matching files will be replaced/updated.
+6. Commit the changes to main.
+7. GitHub Pages will redeploy automatically.
+
+Important files that must appear at repository root:
+index.html
+style.css
+config.js
+data.js
+site.js
+league.js
+nickel-city-logo.png
+favicon.png
+teams.csv
+games.csv
+fields.csv
+Nickel_City_Baseball_League_10U_Rules_2027.pdf
+
+Do not upload only the ZIP. Upload the extracted files.
